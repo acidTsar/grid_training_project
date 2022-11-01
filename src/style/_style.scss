@@ -1,0 +1,28 @@
+@import "./blocks/banner";
+@import "./blocks/cards";
+@import "./blocks/features";
+@import "./blocks/footer";
+@import "./blocks/gallery";
+@import "./blocks/gamers";
+@import "./blocks/header";
+@import "./blocks/sidebar";
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: $grey;
+  font-size: 1.6rem;
+  line-height: 113%;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14.2rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+}
+

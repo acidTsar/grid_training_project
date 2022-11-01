@@ -1,0 +1,9 @@
+.features{
+  padding: 15rem 0;
+  background-color: $white;
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: min-content min-content;
+  grid-gap: 3rem 4rem;
+}
