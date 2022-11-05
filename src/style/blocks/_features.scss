@@ -1,9 +1,28 @@
-.features{
+.features {
   padding: 15rem 0;
-  background-color: $white;
   grid-column: center-start / center-end;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
   grid-template-rows: min-content min-content;
   grid-gap: 3rem 4rem;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: min-content min-content;
+  grid-gap: 1.5rem 2.5rem;
+  &__icon {
+    width: 4.5rem;
+    height: 4.5rem;
+    grid-row: 1/-1;
+    transform: translateY(1rem);
+  }
+  &__text {
+    margin-top: -1.5rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 113%;
+    color: $green_dark;
+  }
 }
